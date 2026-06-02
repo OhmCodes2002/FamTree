@@ -1,0 +1,28 @@
+﻿{
+    "notionTokenEnv":  "NOTION_TOKEN",
+    "notionVersion":  "2022-06-28",
+    "targetPageId":  "",
+    "parentPageId":  "",
+    "title":  "Cursor Activity Log",
+    "maxCharsPerField":  1200,
+    "maxTotalCharsPerEntry":  4000,
+    "enableRedaction":  true,
+    "redactionPatterns":  [
+                              "(?i)(notion[_-]?token\\s*[:=]\\s*)([^\\s\\\"\u0027]+)",
+                              "(?i)(api[_-]?key\\s*[:=]\\s*)([^\\s\\\"\u0027]+)",
+                              "(?i)(authorization\\s*[:=]\\s*bearer\\s+)([^\\s\\\"\u0027]+)",
+                              "(?i)(password\\s*[:=]\\s*)([^\\s\\\"\u0027]+)",
+                              "(?i)(secret\\s*[:=]\\s*)([^\\s\\\"\u0027]+)"
+                          ],
+    "retryCount":  2,
+    "retryDelayMs":  500,
+    "dedupeStateFile":  ".cursor/hooks/.notion-log-state.json",
+    "includeFields":  {
+                          "prompt":  true,
+                          "response":  true,
+                          "thought":  true,
+                          "shellCommand":  true,
+                          "toolInput":  true,
+                          "toolOutput":  true
+                      }
+}

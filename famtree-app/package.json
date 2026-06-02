@@ -1,0 +1,32 @@
+{
+  "name": "famtree",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:lan": "vite --host 0.0.0.0",
+    "build": "npm run generate:template && tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "preview:lan": "npm run build && vite preview --host 0.0.0.0",
+    "generate:template": "node scripts/generate-template.mjs"
+  },
+  "devDependencies": {
+    "@types/dagre": "^0.7.54",
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vite-plugin-pwa": "^1.3.0"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.10.2",
+    "dagre": "^0.8.5",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.16.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.14"
+  }
+}

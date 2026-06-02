@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <pattern id="tribal" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M30 5 L35 25 L55 30 L35 35 L30 55 L25 35 L5 30 L25 25 Z" fill="#1a3c34" opacity="0.04"/>
+      <circle cx="15" cy="15" r="3" fill="#c45c3e" opacity="0.05"/>
+      <circle cx="45" cy="45" r="3" fill="#d4a054" opacity="0.05"/>
+      <path d="M0 30 H60 M30 0 V60" stroke="#1a3c34" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="120" height="120" fill="url(#tribal)"/>
+</svg>

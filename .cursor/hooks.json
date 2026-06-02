@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "sessionEnd": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "beforeMCPExecution": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "afterMCPExecution": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "beforeReadFile": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ],
+    "stop": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .cursor/hooks/log-to-notion.ps1",
+        "failClosed": false
+      }
+    ]
+  }
+}
